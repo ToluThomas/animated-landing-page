@@ -13,6 +13,39 @@ body {
     margin: 0;
 }
 
+nav {
+    border-radius: 20px;
+    background-color: black;
+    width: '100%';
+    height: 64px;
+    margin: 16px 32px;
+    padding: 8px;
+}
+
+nav>button{
+    font-size: medium;
+}
+
+#nav-bar__mid-buttons {
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    padding: 0 20px;
+    height: 70px;
+}
+
+#nav-bar__mid-buttons>*:nth-child(-n+4){
+    color: white;
+    opacity: 0.7;
+    padding-right: 60px;
+    font-size: small;
+}
+
+#nav-bar__mid-buttons>*:last-child {
+    color: white;
+    opacity: 0.7;
+    font-size: small;
+}
+
 h1 {
     font-size: 8em;
     font-weight: 400;
@@ -61,6 +94,11 @@ p {
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    display: flex;
     align-items: center;
 }
 
@@ -170,6 +208,11 @@ button {
     color: white;
 }
 
+.white__button {
+    background-color: white;
+    color: black;
+}
+
 footer {
     padding: 100px 64px;
     background-color: black;
@@ -249,18 +292,12 @@ animation: one-character-at-a-time 10s infinite linear
         margin-top: 30px;
         height: 0;
         padding-bottom: -60px;
-        /* transform: translatey(10px); */
-        /* opacity: 0; */
-        /* width: 0; */
     }
 
     to {
         margin-top: 0px;
         height: 100%;
         padding-bottom: 0px;
-        /* transform: translatey(0); */
-        /* opacity: 1; */
-        /* width: 100%; */
     }
 }
 
