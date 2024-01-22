@@ -141,6 +141,25 @@ section {
     border-radius: 64px;
 }
 
+#section-four__data-container {
+    background-color: var(--very-light-grey);
+    border-radius: 64px;
+    padding: 64px;
+}
+
+#section-four__explore-container {
+    padding-bottom: 64px;
+}
+#section-four__explore-description {
+    width: 45%;
+    font-size: medium;
+}
+
+#section-four__explore-buttons>* {
+    height: 64px;
+    margin-right: 32px;
+}
+
 .section2__left-text {
     max-width: 850px;
 }
